@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/paginationjs/dist/pagination.css"
+    />
+    <title>Movie Star</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand px-4 fw-bold text-success" href="#"
+          >🎥 Movie Star</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-4" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="contact.html" target="_blank"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#footer">About</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Type movie name..."
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="bg-light">
+      <div class="container">
+        <div class="row" id="movies-list">
+          <div class="container">
+            <h1 class="my-4 text-center">Movies</h1>
+            <div class="row" id="movies-list">
+              <!-- Movie cards will be inserted here -->
+            </div>
+            <!-- <div id="pagination-container"></div> -->
+            <!-- <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light text-black p-4 text-center" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <small class="text-muted"
+              >Welcome to Movie Star. We are dedicated to bringing you the
+              latest in movies—from reviews and recommendations to fun facts and
+              must-watch lists. Whether you’re a movie enthusiast or just
+              looking for something new to watch, we’re here to make your movie
+              experience enjoyable and informative. Join us as we explore the
+              world of cinema together!</small
+            >
+          </div>
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <ul class="list-unstyled text-muted">
+              <li><strong>Email:</strong> michaelsamy196@gmail.com</li>
+              <li><strong>Phone:</strong> +20 128 5997489</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="link-success">Facebook</a></li>
+              <li><a href="#" class="link-success">LinkedIn</a></li>
+              <li><a href="#" class="link-success">Github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <p>&copy; 2024 Movie Star. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/paginationjs/dist/pagination.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

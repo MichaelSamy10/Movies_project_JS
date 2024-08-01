@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "0DGraX8AgAAFL573o",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4">Contact Us</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control w-50" id="message" rows="3"></textarea>
+        </div>
+        <div class="form-group my-3">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            class="form-control w-50"
+            id="email"
+            placeholder="name@gmail.com"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary my-3">Submit</button>
+      </form>
+      <div id="statusMessage" class="badge bg-primary"></div>
+    </div>
+
+    <!-- <script src="./node_modules/@emailjs/browser/dist/email.min.js"></script> -->
+    <script src="./contact.js"></script>
+  </body>
+</html>
